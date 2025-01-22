@@ -1,3 +1,4 @@
+
 import getUser from "@/lib/getUser";
 import getUserPosts from "@/lib/getUserPosts";
 import { Metadata } from "next";
@@ -40,4 +41,6 @@ export default async function UserPage({ params: { userId } }: Params) {
     </>
   );
 }
+
+
 
