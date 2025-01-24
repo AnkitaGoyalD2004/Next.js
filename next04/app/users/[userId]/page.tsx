@@ -11,7 +11,7 @@ type Params = {
     params: {
         userId: string
     }
-} 
+}
 
 export async function generateMetadata({ params: { userId } }: Params): Promise<Metadata> {
     const userData: Promise<User> = getUser(userId)
