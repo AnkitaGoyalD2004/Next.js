@@ -3,6 +3,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import getAllUsers from "../../lib/getAllUsers";
 
+// Add this type definition at the top of the file
+type User = {
+    id: number;
+    name: string;
+    email: string;
+    // ... other user properties
+}
+
 export const metadata : Metadata = {
     title: 'Users' ,
 }
